@@ -1,0 +1,99 @@
+/*=== Font Style ===*/
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+/*=== Variables === */
+:root{
+    /*--COLORS--*/
+    --primary-magenta: hsl(300, 43%, 22%);
+    --primary-pink: hsl(333, 80%, 67%);
+    --secondary-dark-magenta: hsl(303, 10%, 53%);
+    --secondary-light-Magenta: hsl(300, 24%, 96%);
+    --neutral-White: hsl(0, 0%, 100%);
+    
+    /*--TYPOGRAPHY--*/
+    --body-font: 1.3rem;
+    --sub-heading: 1.3rem;
+    --bold-heading: 4.2rem;
+}
+
+html{
+    font-family: 'Spartan', sans-serif;
+    font-size: 62.5%;
+}
+
+*, ::before, ::after{
+    margin: auto;
+    padding: 0;
+    align-content: center;
+}
+.wrapper{
+    align-content: center;
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat no-repeat;
+    background-position: top left, bottom right;
+    padding: 6px;
+}
+
+@media screen and (min-width: 376px){
+    .container-1, .container-2{
+    display: flex;
+    }
+
+    .wrapper{
+        align-content: center;
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat no-repeat;
+        background-position: top left, bottom right;
+        padding: 60px;
+    }
+}
+.container-1 div, .container-2 div{
+    /*border:springgreen 1px solid;*/
+    padding: 10px; 
+}
+
+.box1{
+    flex: 1;
+}
+
+.box2{
+    flex: 1;
+}
+
+.box3{
+    flex: 1;
+}
+
+.box4{
+    flex: 1;
+    margin-top: 15px;
+}
+
+.box5{
+    flex: 1;
+    margin-top: 20px;
+}
+
+.header{
+    width: 360px;
+}
+
+h1{
+    color: var(--primary-magenta);
+    font-size: var(--bold-heading);
+    font-weight: 700;
+    letter-spacing: -3px;
+    margin-bottom: 20px;
+}
+
+h3{
+    color: var(--secondary-dark-magenta);
+    font-size: var(--sub-heading);
+    font-weight: 500;
+    line-height: 2rem; 
+}
+
+p{
+    font-weight: 400;
+    font-size:var(--body-font);
+}
