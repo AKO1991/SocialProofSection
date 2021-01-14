@@ -49,9 +49,10 @@ body{
     margin: auto;
     width: 144rem;
 }
+
 .wrapper{
     align-content: center;
-    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
     background-repeat: no-repeat no-repeat;
     background-position: top left, bottom right;
     padding: 6px;
@@ -64,19 +65,33 @@ body{
 
     .wrapper{
         align-content: center;
-        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
         background-repeat: no-repeat no-repeat;
         background-position: top left, bottom right;
         padding: 10rem;
-        border: 1px solid red;
+    }
+
+    .header{
+        width: 360px;
+        text-align: left !important;
+    }
+
+    .second{
+        margin-left: 6rem;
+    }
+    
+    .third{
+        margin-left: 12rem;
     }
 }
+
 .container-1 div{
     padding: 10px; 
 }
 
 .container-2 div{
     padding: 4rem 3rem;
+    width: 26rem;
 }
 
 .box1, .box2, .box3, .box4, .box5{
@@ -84,10 +99,11 @@ body{
 }
 
 .header{
-    width: 360px;
+    width: 32.4rem;
+    text-align: center;
 }
 
-h1{
+.header__heading{
     color: var(--primary-magenta);
     font-weight: 700;
     letter-spacing: -3px;
@@ -120,20 +136,7 @@ h1{
     margin-right: .8rem;
 }
 
-.first{
-    margin-left: ;
-}
-
-.second{
-    margin-left: 6rem;
-}
-
-.third{
-    margin-left: 12rem;
-}
-
 /* Feedback */
-
 .feedback {
     background-color: var(--primary-magenta);
     border-radius: 5px;
@@ -165,12 +168,16 @@ img{
 
 .b1 {
     margin: 4rem 1.2rem 10rem 2rem;
+    
 }
 
 .b2 {
     margin: 6rem 1.2rem 8rem 1.2rem;
+    
 }
 
 .b3 {
     margin: 8rem 2rem 6rem 1.2rem;
+    
 }
+
